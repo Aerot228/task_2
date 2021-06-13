@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+
+	<link rel="stylesheet" type="text/css" href="./styles.css" />
+</head>
+<body>
+	<div class="block parallelogram">
+		<div class="object"><div></div></div>
+
+		<div class="fields">
+			<label>
+				A:
+				<input type="number" name="prlA" value="10" />
+			</label>
+
+			<label>
+				B:
+				<input type="number" name="prlB" value="20" />
+			</label>
+
+			<label>
+				Angle:
+				<input type="number" name="prlAngle" value="50" />
+			</label>
+			<br>
+
+			<label>Area: <span id="prlArea">-</span></label>
+			<label>H: <span id="prlH">-</span></label>
+		</div>
+	</div>
+
+	<div class="block circle">
+		<div class="object"><div></div></div>
+
+		<div class="fields">
+			<label>
+				R:
+				<input type="number" name="crclR" value="15" />
+			</label>
+			<br>
+
+			<label>Area: <span id="crclArea">-</span></label>
+			<label>L: <span id="crclL">-</span></label>
+		</div>
+	</div>
+
+	<div class="block elips">
+		<div class="object"><div></div></div>
+
+		<div class="fields">
+			<label>
+				Horizontal R:
+				<input type="number" name="elipsHR" value="15" />
+			</label>
+			<label>
+				Vertical R:
+				<input type="number" name="elipsVR" value="10" />
+			</label>
+			<br>
+
+			<label>Area: <span id="elipsArea">-</span></label>
+			<label>L: <span id="elipsL">-</span></label>
+		</div>
+	</div>
+
+	<div class="block square">
+		<div class="object"><div></div></div>
+
+		<div class="fields">
+			<label>
+				A:
+				<input type="number" name="sqrA" value="30" />
+			</label>
+			<br>
+
+			<label>Area: <span id="sqrArea">-</span></label>
+			<label>Diagonal: <span id="sqrD">-</span></label>
+		</div>
+	</div>
+
+	<div class="block rectangle">
+		<div class="object"><div></div></div>
+
+		<div class="fields">
+			<label>
+				A:
+				<input type="number" name="rctA" value="30" />
+			</label>
+			<label>
+				B:
+				<input type="number" name="rctB" value="20" />
+			</label>
+			<br>
+
+			<label>Area: <span id="rctArea">-</span></label>
+			<label>Diagonal: <span id="rctD">-</span></label>
+		</div>
+	</div>
+
+	<div class="block triangle">
+		<div class="object"><div></div></div>
+
+		<div class="fields">
+			<label>
+				A:
+				<input type="number" name="trnglA" value="30" />
+			</label>
+			<label>
+				B:
+				<input type="number" name="trnglB" value="40" />
+			</label>
+			<br>
+
+			<label>C: <span id="trnglC">-</span></label>
+			<label>H: <span id="trnglH">-</span></label>
+			<label>Area: <span id="trnglArea">-</span></label>
+			<br>
+			<label>a: <span id="trnglAngleA">-</span></label>
+			<label>b: <span id="trnglAngleB">-</span></label>
+		</div>
+	</div>
+
+
+	<div class="calc">
+		<button onclick="calc()">Calculate</button>
+	</div>
+
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
